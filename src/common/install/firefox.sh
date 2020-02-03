@@ -3,6 +3,8 @@ set -e
 
 echo "Install Firefox"
 
+yum install -y dbus-glib 
+
 function disableUpdate(){
     ff_def="$1/browser/defaults/profile"
     mkdir -p $ff_def
