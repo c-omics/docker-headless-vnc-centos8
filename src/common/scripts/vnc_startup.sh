@@ -107,6 +107,7 @@ echo -e "\nnoVNC HTML client started:\n\t=> connect via http://$VNC_IP:$NO_VNC_P
 if [ -f /usr/share/Modules/init/.modulespath ] ; then
   echo $EnvironmentModules >> /usr/share/Modules/init/.modulespath
 fi
+echo "export MODULEPATH=$EnvironmentModules:\$MODULEPATH" >> ${HOME}/.bashrc
 
 if [[ $DEBUG == true ]] || [[ $1 =~ -t|--tail-log ]]; then
     echo -e "\n------------------ $HOME/.vnc/*$DISPLAY.log ------------------"
