@@ -5,7 +5,7 @@
 yum install -y environment-modules make
 chmod 666 /usr/share/Modules/init/.modulespath
 yum group install -y "Development tools"
-yum install -y gcc openmpi openmpi-devel mpich mpich-devel
+yum install -y gcc openmpi openmpi-devel mpich mpich-devel lmdb-libs
 yum make clean
 rm -rf /var/yum/cache
 
