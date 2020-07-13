@@ -2,14 +2,7 @@
 
 FROM centos:8
 
-MAINTAINER Simon Hofmann "MerrickI@Cardiff.ac.uk"
-ENV REFRESHED_AT 2020-04-20
-
-LABEL io.k8s.description="Headless VNC Container with Xfce window manager, firefox and chromium" \
-      io.k8s.display-name="Headless VNC Container based on Centos" \
-      io.openshift.expose-services="6901:http,5901:xvnc" \
-      io.openshift.tags="vnc, centos, xfce" \
-      io.openshift.non-scalable=true
+MAINTAINER Ian Merrick "MerrickI@Cardiff.ac.uk"
 
 ## Connection ports for controlling the UI:
 # VNC port:5901
